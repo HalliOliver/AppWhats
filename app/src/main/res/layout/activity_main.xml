@@ -7,13 +7,46 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/idAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/idTopNav"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:accessibilityPaneTitle="WhatsApp"
         app:menu="@menu/menutopnav"
         app:title="WhatsApp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idAppBar"
+        android:layout_margin="10dp"
+        app:boxCornerRadiusBottomEnd="25sp"
+        app:boxCornerRadiusBottomStart="25sp"
+        app:boxCornerRadiusTopEnd="25sp"
+        app:boxCornerRadiusTopStart="25sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idAppBar"
+        android:layout_margin="10dp"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/baseline_search"
+        android:drawablePadding="10sp"
+        android:hint="Pergunte a Meta AI ou pesquise"
+        android:inputType="textPersonName"
+        android:padding="20dp" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/idBottomNav"
