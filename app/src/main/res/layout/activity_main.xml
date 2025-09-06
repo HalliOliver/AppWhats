@@ -23,15 +23,23 @@
         app:menu="@menu/menutopnav"
         app:title="WhatsApp" />
 
+    </RelativeLayout>
+
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TextInputmenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/idAppBar"
-        android:layout_margin="10dp"
-        app:boxCornerRadiusBottomEnd="25sp"
-        app:boxCornerRadiusBottomStart="25sp"
-        app:boxCornerRadiusTopEnd="25sp"
-        app:boxCornerRadiusTopStart="25sp" />
+        android:layout_margin="10dp">
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -46,7 +54,7 @@
         android:drawablePadding="10sp"
         android:hint="Pergunte a Meta AI ou pesquise"
         android:inputType="textPersonName"
-        android:padding="20dp" />
+        android:paddingTop="69dp" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/idBottomNav"
@@ -56,6 +64,9 @@
         app:menu="@menu/menunav">
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
