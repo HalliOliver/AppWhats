@@ -26,26 +26,13 @@
     </RelativeLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/TextInputmenu"
+        android:id="@+id/Thallisonlayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/idAppBar"
-        android:layout_margin="10dp">
+        android:layout_margin="10dp"
 
-        <AutoCompleteTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="none"
-            />
-
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/idAppBar"
-        android:layout_margin="10dp"/>
+        />
 
     <com.google.android.material.textfield.TextInputEditText
         android:layout_width="match_parent"
@@ -54,7 +41,9 @@
         android:drawablePadding="10sp"
         android:hint="Pergunte a Meta AI ou pesquise"
         android:inputType="textPersonName"
-        android:paddingTop="69dp" />
+        android:paddingTop="69dp"
+        c
+        />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/idBottomNav"

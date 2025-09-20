@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#000000"
     tools:context=".SplashActivity"
     >
     <RelativeLayout
@@ -18,30 +19,44 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/whats"
+        android:src="@drawable/what"
         />
+    </RelativeLayout>
+
 
     <TextView
         android:id="@+id/Splashtext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imgSplash"
 
         android:text="from"
-        android:textColor="#000000"
+        android:textColor="#7CD5D5D5"
         android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="-550dp"
 
         />
-
         <ImageView
-            android:layout_below="@+id/Splashtext"
             android:layout_width="50dp"
             android:layout_height="50dp"
-
+            android:id="@+id/SplashImg"
+            android:src="@drawable/social"
+            android:layout_gravity="center"
+            android:layout_marginBottom="-620dp"
+            android:layout_marginLeft="-70dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:text="Meta"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:layout_marginBottom="-620dp"
+            android:layout_marginRight="-70sp"
             />
 
 
-    </RelativeLayout>
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
